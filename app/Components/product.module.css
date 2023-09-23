@@ -1,0 +1,51 @@
+.product {
+  border: 1px solid gray;
+  width: 280px;
+  padding: 20px;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+
+.product:hover {
+  border: 2px solid grey;
+}
+.product a {
+  text-decoration: none;
+}
+
+.img {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.productDescription {
+  margin-left: 5%;
+  margin-top: 20px;
+  color: black;
+}
+
+.productDescription h5 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.img img {
+  width: 100%;
+}
+
+@media (max-width: 670px) {
+  .product {
+    width: 100%;
+    height: 400px;
+  }
+
+  .img {
+    height: 300px;
+  }
+
+  .img img {
+    height: 100%;
+  }
+}

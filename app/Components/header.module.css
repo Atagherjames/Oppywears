@@ -1,0 +1,82 @@
+.header {
+  width: 100%;
+  height: 210px;
+}
+
+.head {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.head a {
+  color: #000;
+  text-decoration: none;
+}
+
+.head a:hover {
+  color: blue;
+}
+
+.mobile {
+  display: none;
+}
+
+.desktop {
+  display: flex;
+  gap: 20px;
+}
+
+.desktop a {
+  font-size: 1rem;
+}
+
+.shop {
+  font-size: 25px;
+}
+
+.cartCount {
+  position: relative;
+}
+
+.cartCount span {
+  position: absolute;
+  visibility: hidden;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 23px;
+  width: 23px;
+  top: -10px;
+  left: 22px;
+  background: red;
+}
+
+@media (max-width: 700px) {
+  .head {
+    width: 90%;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    position: relative;
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .open {
+    display: grid;
+    gap: 30px;
+    position: absolute;
+    top: 90px;
+    right: 60vw;
+  }
+}

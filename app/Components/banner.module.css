@@ -1,0 +1,126 @@
+.banner {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  background: #f4f4f4;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  height: 300px;
+}
+
+.bannerMiddle {
+  display: flex;
+}
+
+.link {
+  padding-top: 20px;
+}
+
+.link a {
+  margin-top: 50px;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background: blue;
+  color: #fff;
+}
+
+.bannerMiddle img:first-of-type {
+  transform: scale(1);
+  animation: animate 4s ease infinite;
+}
+
+.bannerMiddle img:nth-child(2) {
+  transform: scale(1.2);
+  animation: animate2 4s ease infinite;
+}
+
+@keyframes animate2 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes animate {
+  0% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+.bannerRight {
+  flex-basis: 20%;
+  padding-top: 100px;
+  text-align: center;
+}
+
+@media (max-width: 1350px) {
+  .banner {
+    gap: 15px;
+  }
+
+  .banner h1 {
+    font-size: 1.6rem;
+  }
+
+  .bannerMiddle img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .banner h1 {
+    font-size: 1.2rem;
+  }
+
+  .link a {
+    padding: 8px 14px;
+    font-size: 0.8rem;
+  }
+
+  .bannerMiddle img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .bannerRight h5 {
+    font-size: 0.8rem;
+  }
+
+  .bannerRight small {
+    font-size: 0.4rem;
+  }
+
+  .bannerLeft {
+    flex-basis: 40%;
+  }
+
+  .bannerRight {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .banner {
+    height: 200px;
+  }
+  .bannerMiddle img {
+    width: 60px;
+    height: 60px;
+  }
+}
