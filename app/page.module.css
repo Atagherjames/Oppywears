@@ -18,6 +18,16 @@
   flex-wrap: wrap;
 }
 
+.display {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.trending {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
 @media (max-width: 670px) {
   .productContainer {
     justify-content: center;

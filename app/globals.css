@@ -17,6 +17,13 @@ header {
   z-index: 400;
 }
 
+footer {
+  width: 100%;
+  margin-top: 100px;
+  position: static;
+  bottom: 0;
+}
+
 .appContainer {
   position: relative;
   width: 80%;

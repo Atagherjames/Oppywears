@@ -30,8 +30,8 @@ const Banner = () => {
       <div className={banner.bannerRight}>
         <h5>Description</h5>
         <small>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-          sit dolorum quo.
+          Oppy is an ecommerce store for buying and selling of clothes and other
+          body wears.
         </small>
       </div>
     </div>
