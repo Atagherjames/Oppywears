@@ -20,7 +20,7 @@ export default function Home() {
           <Product src="/heels.jpg" price={"$100"} title="Female Shoe" />
           <Product src="/suit.webp" price={"$200"} title="Suit" />
           <Product src="/Tshirt.jpg" price={"$30"} title="T-shirt" />
-          <Product src="/roundNeck.jpg" price={"$30"} title="Roun Neck" />
+          <Product src="/roundNeck.jpg" price={"$30"} title="Round Neck" />
           <Product
             src="/womenslong.jpg"
             price={"$90"}

@@ -13,7 +13,17 @@ const Header = () => {
     <header className={isOpen ? header.header : "unused"}>
       <div className={header.head}>
         <div className={header.left}>
-          <Image alt="logo" src="/vercel.svg" width={100} height={100} />
+          <Image
+            alt="logo"
+            src="/oppy.jpg"
+            width={70}
+            height={70}
+            style={{
+              borderRadius: "50%",
+              marginTop: "7px",
+              marginBottom: "7px",
+            }}
+          />
         </div>
         <div className={header.right}>
           {/* destop */}

@@ -5,8 +5,8 @@ const Footer = () => {
   return (
     <footer>
       <div className={footer.sub}>
-        <form>
-          <h2>News Letter</h2>
+        <h2>News Letter</h2>
+        <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
           <input
             type="email"
             name="subscribe"
@@ -14,7 +14,7 @@ const Footer = () => {
             defaultValue={"sample@gmail.com"}
           />
           <button>Subscribe</button>
-        </form>
+        </div>
       </div>
       <div className={footer.quickLinks}>
         <div>
