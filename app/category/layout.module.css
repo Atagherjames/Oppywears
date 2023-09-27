@@ -1,0 +1,10 @@
+.linkWrapper {
+  width: fit-content;
+  padding: 10px 30px;
+  background: #f4f4f4;
+}
+
+.linkWrapper a {
+  color: black;
+  text-decoration: none;
+}

@@ -1,0 +1,48 @@
+.catHeader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  font-size: 1.4rem;
+  position: relative;
+}
+
+.catHeader a {
+  text-decoration: none;
+  color: black;
+}
+
+.catHeader span:first-of-type {
+  position: absolute;
+  font-weight: 700;
+  left: 0;
+}
+
+.catHeader span:first-of-type + span {
+  font-weight: 800;
+}
+
+.categories {
+  padding: 70px;
+  gap: 20px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 800px) {
+  .categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .categories {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

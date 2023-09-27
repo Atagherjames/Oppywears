@@ -1,0 +1,27 @@
+.loadContainer {
+  width: 100vw;
+  height: 100vh;
+}
+.loadContainer div {
+  width: 100%;
+  height: 100%;
+  transform: translateX(50%);
+  transform: translateY(-50%);
+}
+
+.loadContainer div .loadingImg {
+  transform: scale(1.2);
+  animation: loading 3s ease infinite;
+}
+
+@keyframes loading {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

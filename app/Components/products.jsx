@@ -5,6 +5,7 @@ const product = [
     src: "/sneakers.jpg",
     price: "$80",
     description: "Thisisisisiiiiiiiiiiiiiiiii",
+    category: "Male",
   },
 
   {
@@ -13,6 +14,7 @@ const product = [
     src: "/kardigan.jpg",
     price: "$50",
     description: "This is a gjjjeeeeeeeeeeeeeeeeeeeeee",
+    category: "Women",
   },
 
   {
@@ -21,6 +23,7 @@ const product = [
     src: "/Tshirt.jpg",
     price: "$40",
     description: "ssjjjjjjjjjjjjjjjjjjj",
+    category: "Male",
   },
 
   {
@@ -29,6 +32,7 @@ const product = [
     src: "/heels.jpg",
     price: "$100",
     description: "ssjjjjjjjjjjjjjjjjjjj",
+    category: "Women",
   },
 
   {
@@ -37,6 +41,7 @@ const product = [
     src: "/suit.webp",
     price: "$200",
     description: "ssjjjjjjjjjjjjjjjjjjj",
+    category: "Male",
   },
 
   {
@@ -45,6 +50,7 @@ const product = [
     src: "/Tshirt.jpg",
     price: "$30",
     description: "ssjjjjjjjjjjjjjjjjjjj",
+    category: "Women",
   },
 
   {
@@ -53,6 +59,7 @@ const product = [
     src: "/roundNeck.jpg",
     price: "$40",
     description: "ssjjjjjjjjjjjjjjjjjjj",
+    category: "Children",
   },
 
   {
@@ -61,6 +68,7 @@ const product = [
     src: "/womenslong.jpg",
     price: "$90",
     description: "ssjjjjjjjjjjjjjjjjjjj",
+    category: "Women",
   },
 
   {
@@ -69,6 +77,7 @@ const product = [
     src: "/necklace.jpg",
     price: "$2000",
     description: "ssjjjjjjjjjjjjjjjjjjj",
+    category: "Women",
   },
 
   {
@@ -77,6 +86,7 @@ const product = [
     src: "/ladiesPolo.jpg",
     price: "$50",
     description: "ssjjjjjjjjjjjjjjjjjjj",
+    category: "Women",
   },
 
   {
@@ -85,6 +95,7 @@ const product = [
     src: "/femaleSneaker.jpg",
     price: "$80",
     description: "ssjjjjjjjjjjjjjjjjjjj",
+    category: "Women",
   },
 
   {
@@ -93,6 +104,7 @@ const product = [
     src: "/necklace.jpg",
     price: "$2000",
     description: "ssjjjjjjjjjjjjjjjjjjj",
+    category: "Women",
   },
 
   {
@@ -101,6 +113,7 @@ const product = [
     src: "/jeans.jpg",
     price: "$60",
     description: "ssjjjjjjjjjjjjjjjjjjj",
+    category: "Children",
   },
 
   {
@@ -109,6 +122,7 @@ const product = [
     src: "/3in1.jpg",
     price: "$200",
     description: "ssjjjjjjjjjjjjjjjjjjj",
+    category: "Children",
   },
 
   {
@@ -117,6 +131,7 @@ const product = [
     src: "/unexJacket.jpg",
     price: "$2000",
     description: "ssjjjjjjjjjjjjjjjjjjj",
+    category: "Male",
   },
 ];
 
