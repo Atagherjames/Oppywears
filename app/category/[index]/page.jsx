@@ -2,7 +2,7 @@ import global from "../../page.module.css";
 import Product from "@/app/Components/Product";
 import product from "@/app/Components/products";
 
-const page = ({ params }) => {
+const page = ({ params, geturl }) => {
   const category = product.filter((item) => item.category === params.index);
   if (!category) return;
 
