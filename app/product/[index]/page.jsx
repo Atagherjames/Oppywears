@@ -12,7 +12,7 @@ const Page = ({ params: { index } }) => {
     return;
   }
 
-  const [useSize, setSize] = useState(1);
+  const [size, setSize] = useState(1);
   const increment = () => {
     setSize(size + 1);
   };
