@@ -6,13 +6,13 @@ import style from "./product.module.css";
 import Image from "next/image";
 import Trending from "@/app/Components/Trending";
 
-const page = ({ params: { index } }) => {
+const Page = ({ params: { index } }) => {
   const item = product.find((item) => item.id === Number(index));
   if (!item) {
     return;
   }
 
-  const [size, setSize] = useState(1);
+  const [useSize, setSize] = useState(1);
   const increment = () => {
     setSize(size + 1);
   };
