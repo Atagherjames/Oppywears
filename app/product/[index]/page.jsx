@@ -57,4 +57,4 @@ const Page = ({ params: { index } }) => {
   );
 };
 
-export default page;
+export default Page;
