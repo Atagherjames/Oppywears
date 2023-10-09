@@ -10,6 +10,7 @@ const page = () => {
           src={item.src}
           price={item.price}
           title={item.name}
+          id={item.id}
           key={item.id}
         />
       ))}
