@@ -4,7 +4,8 @@ const product = [
     name: "Sneakers",
     src: "/sneakers.jpg",
     price: "$80",
-    description: "Thisisisisiiiiiiiiiiiiiiiii",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, voluptatem.",
     category: "Male",
   },
 
@@ -13,7 +14,8 @@ const product = [
     name: "Kardigan",
     src: "/kardigan.jpg",
     price: "$50",
-    description: "This is a gjjjeeeeeeeeeeeeeeeeeeeeee",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, voluptatem.",
     category: "Women",
   },
 

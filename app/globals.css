@@ -4,9 +4,6 @@
   box-sizing: border-box;
 }
 
-.poppin {
-  font-family: Poppins;
-}
 header {
   width: 100%;
   position: fixed;

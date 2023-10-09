@@ -1,0 +1,132 @@
+.productContainer {
+  display: flex;
+  gap: 100px;
+  overflow: hidden;
+}
+
+.imgContainer {
+  flex-basis: 40%;
+}
+
+.productDetailsRight {
+  flex-basis: 50%;
+  background: #f4f4f4;
+  padding: 50px;
+}
+
+.imgContainer img {
+  max-width: 100%;
+  height: auto;
+}
+
+.detail {
+  font-size: 1.1rem;
+}
+
+/*-----Quantity-----*/
+.quantity {
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.quantityContainer {
+  display: flex;
+  gap: 30px;
+}
+
+.increment {
+  display: flex;
+  gap: 5px;
+  font-size: 18px;
+  font-weight: 800;
+  border: 1px solid black;
+}
+
+.increment span {
+  padding: 15px 15px;
+}
+
+.increment button {
+  padding: 5px 15px;
+  font-size: 26px;
+  outline: none;
+  border: none;
+  background: none;
+}
+
+.increment button:first-of-type {
+  border-right: 1px solid black;
+}
+
+.increment button:last-of-type {
+  border-left: 1px solid black;
+}
+
+.buttonContainer {
+  display: flex;
+  margin-top: 50px;
+  gap: 50px;
+}
+
+.buttonContainer button {
+  padding: 12px 22px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: #fff;
+}
+
+.buttonContainer button:first-of-type {
+  border: 1px solid black;
+}
+
+.buttonContainer button:first-of-type:hover {
+  background: black;
+  color: #fff;
+}
+
+.buttonContainer button:first-of-type + button {
+  background: rgb(233, 14, 50);
+  color: #fff;
+}
+
+.buttonContainer button:first-of-type + button:hover {
+  background: #fff;
+  color: rgb(233, 14, 50);
+  border: 1px solid rgb(233, 14, 50);
+}
+
+/* for small devices */
+
+@media (max-width: 1100px) {
+  .productContainer {
+    flex-direction: column;
+  }
+  .productDetailsRight {
+    flex-direction: column;
+  }
+
+  .detail {
+    font-size: 0.9rem;
+  }
+
+  .quantity {
+    font-size: 1.2rem;
+  }
+  .buttonContainer {
+    align-items: center;
+  }
+
+  .buttonContainer button {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+
+  .increment button {
+    padding: 3px 10px;
+  }
+
+  .increment span {
+    padding: 10px 10px;
+  }
+}

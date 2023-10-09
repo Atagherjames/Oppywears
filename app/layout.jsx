@@ -5,8 +5,8 @@ import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 
 const poppins = Poppins({
+  weight: "400",
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
 export const metadata = {
@@ -18,7 +18,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={poppins.poppin}>
+      <body className={poppins.className}>
         <Header />
         <section className="appContainer">{children}</section>
         <Footer />

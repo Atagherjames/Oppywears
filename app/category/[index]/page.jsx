@@ -1,9 +1,9 @@
 import global from "../../page.module.css";
 import Product from "@/app/Components/Product";
-import product from "@/app/Components/products";
+import products from "@/app/Components/products";
 
 const page = ({ params, geturl }) => {
-  const category = product.filter((item) => item.category === params.index);
+  const category = products.filter((item) => item.category === params.index);
   if (!category) return;
 
   return (
@@ -14,6 +14,7 @@ const page = ({ params, geturl }) => {
           price={item.price}
           title={item.name}
           key={item.id}
+          id={item.id}
         />
       ))}
     </div>

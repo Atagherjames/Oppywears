@@ -8,7 +8,7 @@ const Banner = () => {
       <div className={banner.bannerLeft}>
         <h1>OPPY WEARS</h1>
         <div className={banner.link}>
-          <Link href="/">SHOP NOW</Link>
+          <Link href="/category">SHOP NOW</Link>
         </div>
       </div>
       <div className={banner.bannerMiddle}>

@@ -14,17 +14,32 @@ export default function Home() {
         {/* proud product */}
         <h4>Product we are proud of</h4>
         <section className={styles.productContainer}>
-          <Product src="/sneakers.jpg" price={"$80"} title="Sneaker" />
-          <Product src="/kardigan.jpg" price={"$50"} title="Kardigan" />
-          <Product src="/sneaker1.jpg" price={"$40"} title="Sneaker" />
-          <Product src="/heels.jpg" price={"$100"} title="Female Shoe" />
-          <Product src="/suit.webp" price={"$200"} title="Suit" />
-          <Product src="/Tshirt.jpg" price={"$30"} title="T-shirt" />
-          <Product src="/roundNeck.jpg" price={"$30"} title="Round Neck" />
+          <div>
+            <Product src="/sneakers.jpg" price={"$80"} title="Sneaker" id={1} />
+          </div>
+
+          <Product src="/kardigan.jpg" price={"$50"} title="Kardigan" id={2} />
+
+          <Product src="/sneaker1.jpg" price={"$40"} title="Sneaker" id={3} />
+
+          <Product src="/heels.jpg" price={"$100"} title="Female Shoe" id={4} />
+
+          <Product src="/suit.webp" price={"$200"} title="Suit" id={5} />
+
+          <Product src="/Tshirt.jpg" price={"$30"} title="T-shirt" id={6} />
+
+          <Product
+            src="/roundNeck.jpg"
+            price={"$30"}
+            title="Round Neck"
+            id={7}
+          />
+
           <Product
             src="/womenslong.jpg"
             price={"$90"}
             title="Womens Long Gown"
+            id={8}
           />
         </section>
       </section>
