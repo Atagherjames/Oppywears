@@ -7,12 +7,12 @@ import Image from "next/image";
 import Trending from "@/app/Components/Trending";
 
 const Page = ({ params: { index } }) => {
+  const [size, setSize] = useState(1);
   const item = product.find((item) => item.id === Number(index));
   if (!item) {
     return;
   }
 
-  const [size, setSize] = useState(1);
   const increment = () => {
     setSize(size + 1);
   };
