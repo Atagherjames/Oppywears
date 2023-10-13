@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
+import { DataStore } from "./Components/DataStore";
 
 const poppins = Poppins({
   weight: "400",
@@ -19,9 +20,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={poppins.className}>
-        <Header />
-        <section className="appContainer">{children}</section>
-        <Footer />
+        <DataStore>
+          <Header />
+          <section className="appContainer">{children}</section>
+          <Footer />
+        </DataStore>
       </body>
     </html>
   );

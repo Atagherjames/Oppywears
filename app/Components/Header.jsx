@@ -5,9 +5,14 @@ import Link from "next/link";
 import { GiShoppingCart } from "react-icons/gi";
 import { Fade as Hamburger } from "hamburger-react";
 import { useState } from "react";
+import { useDataStore } from "./DataStore";
+import { initialState } from "./reducer";
 
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
+
+  const { state, dispatch } = useDataStore(initialState);
+  console.log(state);
 
   return (
     <header className={isOpen ? header.header : "unused"}>
@@ -29,7 +34,7 @@ const Header = () => {
           {/* destop */}
           <nav className={header.desktop}>
             <Link href="/category">CATEGORIES</Link>
-            <Link href="/product">PRODUCT PAGE</Link>
+            <Link href={`/product/${state.id}`}>PRODUCT PAGE</Link>
             <div className={header.cartCount}>
               <GiShoppingCart className={header.shop} />
               <span>12</span>
