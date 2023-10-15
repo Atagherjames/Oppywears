@@ -10,6 +10,9 @@ import { useDataStore } from "@/app/Components/DataStore";
 const Page = ({ params: { index } }) => {
   const item = product.find((item) => item.id === Number(index));
   const { state, dispatch } = useDataStore();
+  const initialPrice = item.price;
+  const [price, setPrice] = useState(initialPrice);
+  const [size, setSize] = useState(1);
 
   useEffect(() => {
     dispatch({ type: "ID", payload: index });
@@ -18,10 +21,6 @@ const Page = ({ params: { index } }) => {
   if (!item) {
     return;
   }
-
-  const initialPrice = item.price;
-  const [price, setPrice] = useState(initialPrice);
-  const [size, setSize] = useState(1);
 
   const increment = () => {
     setSize(size + 1);
