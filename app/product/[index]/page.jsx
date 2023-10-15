@@ -9,15 +9,15 @@ import { useDataStore } from "@/app/Components/DataStore";
 
 const Page = ({ params: { index } }) => {
   const item = product.find((item) => item.id === Number(index));
-  if (!item) {
-    return;
-  }
-
   const { state, dispatch } = useDataStore();
 
   useEffect(() => {
     dispatch({ type: "ID", payload: index });
   }, [index, dispatch]);
+
+  if (!item) {
+    return;
+  }
 
   const initialPrice = item.price;
   const [price, setPrice] = useState(initialPrice);
