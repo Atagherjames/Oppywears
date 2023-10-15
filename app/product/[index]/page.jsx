@@ -47,10 +47,7 @@ const Page = ({ params: { index } }) => {
           <div className={style.quantityContainer}>
             <span className={style.quantity}>Quantity:</span>
             <div className={style.increment}>
-              <button
-                type="button"
-                onClick={() => dispatch({ type: "ID", payload: index })}
-              >
+              <button type="button" onClick={decrement}>
                 -
               </button>
               <span>{size}</span>

@@ -12,7 +12,6 @@ const Header = () => {
   const [isOpen, setOpen] = useState(false);
 
   const { state, dispatch } = useDataStore(initialState);
-  console.log(state);
 
   return (
     <header className={isOpen ? header.header : "unused"}>
