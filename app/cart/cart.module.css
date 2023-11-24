@@ -1,0 +1,20 @@
+.product {
+  display: flex;
+  flex-direction: column;
+}
+
+.productDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.productLeft img {
+  width: 80px;
+  height: 80px;
+}
+
+.cartContianer {
+  align-items: center;
+  justify-content: center;
+}

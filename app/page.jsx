@@ -14,9 +14,7 @@ export default function Home() {
         {/* proud product */}
         <h4>Product we are proud of</h4>
         <section className={styles.productContainer}>
-          <div>
-            <Product src="/sneakers.jpg" price={"$80"} title="Sneaker" id={1} />
-          </div>
+          <Product src="/sneakers.jpg" price={"$80"} title="Sneaker" id={1} />
 
           <Product src="/kardigan.jpg" price={"$50"} title="Kardigan" id={2} />
 

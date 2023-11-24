@@ -10,7 +10,7 @@ const Trending = ({ title = "Trending" }) => {
         <Product
           src="/necklace.jpg"
           price={"$2000"}
-          title="Female Classic Jewelry"
+          title="Female  Jewelry"
           id={9}
         />
         <Product

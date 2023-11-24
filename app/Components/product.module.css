@@ -7,7 +7,7 @@
 }
 
 .product:hover {
-  border: 2px solid grey;
+  border: 2px solid black;
 }
 .product a {
   text-decoration: none;
@@ -49,5 +49,3 @@
     height: 100%;
   }
 }
-
-
