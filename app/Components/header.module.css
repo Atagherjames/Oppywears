@@ -45,7 +45,7 @@
   position: absolute;
   font-size: small;
   color: #fff;
-
+  visibility: hidden;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -55,6 +55,10 @@
   top: -8px;
   left: 17px;
   background: rgb(233, 14, 50);
+}
+
+.cartCount span.showCount {
+  visibility: visible;
 }
 
 @media (max-width: 700px) {
