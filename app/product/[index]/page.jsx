@@ -10,9 +10,11 @@ import { useDataStore } from "@/app/Components/DataStore";
 const Page = ({ params: { index } }) => {
   const item = product.find((item) => item.id === Number(index));
   const { state, dispatch } = useDataStore();
+
   const initialPrice = item.price;
   const [price, setPrice] = useState(initialPrice);
   const [size, setSize] = useState(1);
+  item["quantity"] = size;
 
   useEffect(() => {
     dispatch({ type: "ID", payload: index });
@@ -21,7 +23,16 @@ const Page = ({ params: { index } }) => {
   if (!item) {
     return;
   }
-
+  const addToCart = () => {
+    const itemExist = state.items.find((item) => item.name === item.name);
+    if (!itemExist) {
+      dispatch({
+        type: "ADD_TO_CART",
+        payload: item,
+      });
+    }
+    return;
+  };
   const increment = () => {
     setSize(size + 1);
     setPrice(initialPrice * (size + 1));
@@ -56,7 +67,7 @@ const Page = ({ params: { index } }) => {
             </div>
           </div>
           <div className={style.buttonContainer}>
-            <button>ADD TO CART</button>
+            <button onClick={addToCart}>ADD TO CART</button>
             <button>BUY NOW</button>
           </div>
         </div>

@@ -4,8 +4,7 @@ const product = [
     name: "Sneakers",
     src: "/sneakers.jpg",
     price: 80,
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, voluptatem.",
+    description: "Sneakers that feels good to wear.",
     category: "Male",
   },
 
@@ -14,8 +13,7 @@ const product = [
     name: "Kardigan",
     src: "/kardigan.jpg",
     price: 50,
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, voluptatem.",
+    description: "Kardigan that prevents cold",
     category: "Women",
   },
 
@@ -24,7 +22,7 @@ const product = [
     name: "Sneaker",
     src: "/Tshirt.jpg",
     price: 40,
-    description: "ssjjjjjjjjjjjjjjjjjjj",
+    description: "Nice and affordable sneakers.",
     category: "Male",
   },
 
@@ -33,7 +31,7 @@ const product = [
     name: "Female Shoe",
     src: "/heels.jpg",
     price: 100,
-    description: "ssjjjjjjjjjjjjjjjjjjj",
+    description: "Smart female shoe.",
     category: "Women",
   },
 
@@ -42,7 +40,7 @@ const product = [
     name: "Suit",
     src: "/suit.webp",
     price: 200,
-    description: "ssjjjjjjjjjjjjjjjjjjj",
+    description: "Suit for kids and adults",
     category: "Male",
   },
 
@@ -51,7 +49,7 @@ const product = [
     name: "T-shirt",
     src: "/Tshirt.jpg",
     price: 30,
-    description: "ssjjjjjjjjjjjjjjjjjjj",
+    description: "Women T-shirt",
     category: "Women",
   },
 
@@ -60,7 +58,7 @@ const product = [
     name: "Round Neck",
     src: "/roundNeck.jpg",
     price: 40,
-    description: "ssjjjjjjjjjjjjjjjjjjj",
+    description: "Round neck shirt for children",
     category: "Children",
   },
 
@@ -69,7 +67,7 @@ const product = [
     name: "Womens Long Gown",
     src: "/womenslong.jpg",
     price: 90,
-    description: "ssjjjjjjjjjjjjjjjjjjj",
+    description: "Stunning female gown",
     category: "Women",
   },
 
@@ -78,7 +76,7 @@ const product = [
     name: "Female Classic Jewelry",
     src: "/necklace.jpg",
     price: 2000,
-    description: "ssjjjjjjjjjjjjjjjjjjj",
+    description: "Classic female jewelry for women",
     category: "Women",
   },
 
@@ -87,7 +85,7 @@ const product = [
     name: "Ladies Polo",
     src: "/ladiesPolo.jpg",
     price: 50,
-    description: "ssjjjjjjjjjjjjjjjjjjj",
+    description: "Ladies polo.",
     category: "Women",
   },
 
@@ -96,7 +94,7 @@ const product = [
     name: "Sneaker",
     src: "/femaleSneaker.jpg",
     price: 80,
-    description: "ssjjjjjjjjjjjjjjjjjjj",
+    description: "Sneakers for women",
     category: "Women",
   },
 
@@ -105,7 +103,7 @@ const product = [
     name: "Female Classic Jewelry",
     src: "/necklace.jpg",
     price: 2000,
-    description: "ssjjjjjjjjjjjjjjjjjjj",
+    description: "Stunning jewelry",
     category: "Women",
   },
 
@@ -114,7 +112,7 @@ const product = [
     name: "Male Jeans",
     src: "/jeans.jpg",
     price: 60,
-    description: "ssjjjjjjjjjjjjjjjjjjj",
+    description: "Designers jeans for female.",
     category: "Children",
   },
 
@@ -123,7 +121,7 @@ const product = [
     name: "3 in 1 Chinos trouser",
     src: "/3in1.jpg",
     price: 200,
-    description: "ssjjjjjjjjjjjjjjjjjjj",
+    description: "Chinos trouser for children",
     category: "Children",
   },
 
@@ -132,7 +130,7 @@ const product = [
     name: "Unex Jacket",
     src: "/unexJacket.jpg",
     price: 2000,
-    description: "ssjjjjjjjjjjjjjjjjjjj",
+    description: "Classic Unex jacket for men",
     category: "Male",
   },
 ];

@@ -12,6 +12,7 @@ const Header = () => {
   const [isOpen, setOpen] = useState(false);
 
   const { state, dispatch } = useDataStore(initialState);
+  const itemLength = state.totalQuantity;
 
   return (
     <header className={isOpen ? header.header : "unused"}>
@@ -35,8 +36,11 @@ const Header = () => {
             <Link href="/category">CATEGORIES</Link>
             <Link href={`/product/${state.id}`}>PRODUCT PAGE</Link>
             <div className={header.cartCount}>
-              <GiShoppingCart className={header.shop} />
-              <span>12</span>
+              <Link href="/cart">
+                {" "}
+                <GiShoppingCart className={header.shop} />
+              </Link>
+              {itemLength > 0 ? <span>{itemLength}</span> : <span>0</span>}
             </div>
           </nav>
           {/* mobile */}
@@ -52,8 +56,14 @@ const Header = () => {
               </nav>
             )}
             <div className={header.cartCount}>
-              <GiShoppingCart className={header.shop} />
-              <span>12</span>
+              <Link href="/cart">
+                <GiShoppingCart className={header.shop} />
+              </Link>
+              {itemLength === 0 ? (
+                <span>{itemLength}</span>
+              ) : (
+                <span style={{ visibility: "hidden" }}>0</span>
+              )}
             </div>
             <Hamburger size={25} toggle={setOpen} toggled={isOpen} />
           </nav>
