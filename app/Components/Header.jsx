@@ -41,7 +41,11 @@ const Header = () => {
                 {" "}
                 <GiShoppingCart className={header.shop} />
               </Link>
-              <span className={showHide}>{itemLength}</span>
+              <span
+                className={itemLength > 0 ? header.showCount : header.hideCount}
+              >
+                {itemLength}
+              </span>
             </div>
           </nav>
           {/* mobile */}
@@ -60,7 +64,9 @@ const Header = () => {
               <Link href="/cart">
                 <GiShoppingCart className={header.shop} />
               </Link>
-              <span className={itemLength >= 0 ? "showCount" : "hideCount"}>
+              <span
+                className={itemLength > 0 ? header.showCount : header.hideCount}
+              >
                 {itemLength}
               </span>
             </div>

@@ -33,14 +33,15 @@ export const reducer = (state, action) => {
         (item) => item.id !== action.payload.id
       );
 
-      const updatedTotalCostAfterRemove = state.totalCost - removedItem.price;
+      const updatedTotalCostAfterRemoved =
+        state.totalCost - removedItem.price * removedItem.quantity;
       const updatedTotalQuantityAfterRemove =
         state.totalQuantity - removedItem.quantity;
 
       return {
         ...state,
         items: filteredItems,
-        totalCost: updatedTotalCostAfterRemove,
+        totalCost: updatedTotalCostAfterRemoved,
         totalQuantity: updatedTotalQuantityAfterRemove,
       };
 

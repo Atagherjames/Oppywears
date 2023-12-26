@@ -4,10 +4,9 @@ import Image from "next/image";
 import CartItem from "./CartItem";
 import { useDataStore } from "@/app/Components/DataStore";
 
-const page = () => {
+const Page = () => {
   const { state } = useDataStore();
   const itemLength = state.totalQuantity;
-  console.log(itemLength);
 
   return (
     <div className={style.cartContainer}>
@@ -60,4 +59,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
