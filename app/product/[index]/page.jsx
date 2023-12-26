@@ -11,6 +11,11 @@ const Page = ({ params: { index } }) => {
   const item = product.find((item) => item.id === Number(index));
   const { state, dispatch } = useDataStore();
 
+  // Update session storage whenever the state changes
+  useEffect(() => {
+    localStorage.setItem("cartState", JSON.stringify(state));
+  }, [state]);
+
   const initialPrice = item.price;
   const [price, setPrice] = useState(initialPrice);
   const [size, setSize] = useState(1);
@@ -21,18 +26,21 @@ const Page = ({ params: { index } }) => {
   }, [index, dispatch]);
 
   if (!item) {
-    return;
+    return null; // Return null or a loading indicator if item is not found
   }
+
   const addToCart = () => {
-    const itemExist = state.items.find((item) => item.name === item.name);
+    const itemExist = state.items.find(
+      (cartItem) => cartItem.name === item.name
+    );
     if (!itemExist) {
       dispatch({
         type: "ADD_TO_CART",
         payload: item,
       });
     }
-    return;
   };
+
   const increment = () => {
     setSize(size + 1);
     setPrice(initialPrice * (size + 1));

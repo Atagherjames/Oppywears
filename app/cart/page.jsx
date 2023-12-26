@@ -1,12 +1,37 @@
 "use client";
+
+import { useEffect } from "react";
 import style from "./cart.module.css";
-import Image from "next/image";
 import CartItem from "./CartItem";
 import { useDataStore } from "@/app/Components/DataStore";
 
 const Page = () => {
-  const { state } = useDataStore();
+  const { state, dispatch } = useDataStore();
   const itemLength = state.totalQuantity;
+
+  // Load items from session storage on mount
+  useEffect(() => {
+    const storedState = JSON.parse(sessionStorage.getItem("cartState"));
+    if (storedState) {
+      dispatch({ type: "LOAD_FROM_SESSION_STORAGE", payload: storedState });
+    }
+  }, [dispatch]);
+
+  // Update cart store when session storage changes
+  useEffect(() => {
+    const handleStorageChange = (event) => {
+      if (event.key === "cartState") {
+        const storedState = JSON.parse(event.newValue);
+        dispatch({ type: "LOAD_FROM_SESSION_STORAGE", payload: storedState });
+      }
+    };
+
+    window.addEventListener("storage", handleStorageChange);
+
+    return () => {
+      window.removeEventListener("storage", handleStorageChange);
+    };
+  }, [dispatch]);
 
   return (
     <div className={style.cartContainer}>
@@ -22,7 +47,6 @@ const Page = () => {
         <div className={style.cartLeftSubHeader}>
           <h5>PRODUCT DETAILS</h5>
           <h5>QUANTITY</h5>
-
           <h5>REMOVE</h5>
         </div>
 
@@ -46,7 +70,6 @@ const Page = () => {
           <span>
             <b>Total: </b>
           </span>
-
           <span>
             <b>${state.totalCost}</b>
           </span>

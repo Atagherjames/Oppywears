@@ -68,6 +68,9 @@ export const reducer = (state, action) => {
         totalQuantity: updatedTotalQuantityAfterUpdate,
       };
 
+    case "LOAD_FROM_SESSION_STORAGE":
+      return action.payload;
+
     default:
       return state;
   }
